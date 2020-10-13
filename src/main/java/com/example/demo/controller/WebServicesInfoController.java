@@ -11,8 +11,8 @@ public class WebServicesInfoController {
       @GetMapping("/")
       public WebServiceInfo getWebServicesInfo() {
 
-          WebServiceInfo webServiceInfo= new WebServiceInfo("Book Api","api/v1",
-                  "MD Najmul Hasan",2017100000028L);
+          WebServiceInfo webServiceInfo= new WebServiceInfo("RestFull book api","api/v1",
+                  "Md. Shajalal",2017100000038L);
 
          webServiceInfo.setSwagger_end_point("/swagger");
          return webServiceInfo;

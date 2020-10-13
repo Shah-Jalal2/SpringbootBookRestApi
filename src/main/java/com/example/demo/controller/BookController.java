@@ -52,15 +52,7 @@ public class BookController {
         Response response = bookService.update(id, book);
         return getResponse(response);
     }
-    @GetMapping(UrlConstrains.BookManagement.FIND_BY_ISBN)
-    public ResponseEntity<Object> finByIsbn(@PathVariable String isbn){
-        Response response = bookService.findBYIsbn(isbn);
-        return getResponse(response);
-    }
-    @GetMapping(UrlConstrains.BookManagement.FIND_BY_AUTHOR)
-    public ResponseEntity<Object>findByAuthor(@PathVariable String author){
-      return   getResponse(bookService.findByAuthor(author));
-    }
+
     @DeleteMapping(UrlConstrains.BookManagement.DELETE)
     public ResponseEntity<Object>delete(@PathVariable long id){
         return getResponse(bookService.delete(id));
